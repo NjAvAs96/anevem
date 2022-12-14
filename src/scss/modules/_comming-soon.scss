@@ -1,0 +1,35 @@
+.comming-soon__container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.comming-soon__brand {
+	max-width: 50vw;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	@include media-breakpoint-down(md) {
+		margin-bottom: 20px;
+	}
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 15px;
+	}
+}
+
+.comming-soon__globe {
+	position: absolute;
+	opacity: 0.4;
+}
+
+.comming-soon__title {
+	font-size: 80px;
+	@include media-breakpoint-down(md) {
+		font-size: 50px;
+	}
+	@include media-breakpoint-down(sm) {
+		font-size: 35px;
+	}
+}
