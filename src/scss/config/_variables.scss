@@ -3,16 +3,17 @@
 
 $font-default: 'Montserrat', sans-serif;
 
+$font-sec: 'Ailerons', sans-serif;
+
 // Colors
 $white: #fff;
 $black: #000;
-$orange: #f1592a;
-$grey: #EAECF2;
-$site-colors: (
-	'black': $black,
-	'white': $white,
-	'orange': $orange
-) !default;
+$grey-bg: #EAECF2;
+$grey-bg-2: #EBECF0;
+$grey-border: #7d7d7d;
+$form-border: #aebed7;;
+$video-title: #222221;
+
 
 // ----------  Bootstrap grid
 // ------------------------------------------------------------------------------
@@ -27,7 +28,8 @@ $grid-breakpoints: (
 	sm: 576px,
 	md: 768px,
 	lg: 992px,
-	xl: 1200px
+	xl: 1200px,
+	xxl: 1335px
 ) !default;
 
 // ----------  Grid containers

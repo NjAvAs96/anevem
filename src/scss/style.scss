@@ -21,5 +21,14 @@
 @import 'layout/lists';
 @import 'layout/iconfont';
 // MODULES
+@import 'modules/header';
+@import 'modules/footer';
+@import 'modules/banner';
+@import 'modules/social';
+@import 'modules/branding';
+@import 'modules/intro';
+@import 'modules/promo';
+@import 'modules/contact';
 @import 'modules/comming-soon';
 // PLUGINS
+@import 'plugin/selectric';

@@ -1,0 +1,76 @@
+// ----------  promo
+// ------------------------------------------------------------------------------
+.promo {
+	display: flex;
+	margin-bottom: 60px;
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 24px;
+	}
+}
+
+.promo__container {
+	border-radius: 56px;
+	display: flex;
+	overflow: hidden;
+	z-index: 1;
+	position: relative;
+	background: linear-gradient(90deg, #222221 0%, #000000 22.13%, #000000 76.69%, #222221 98.82%);
+}
+
+.promo__loop {
+	width: 100%;
+	opacity: 0.6;
+	@include media-breakpoint-down(lg) {
+		width: 200%;
+		margin-left: -50%;
+	}
+}
+
+.promo__title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: $font-sec;
+	font-size: 96px;
+	font-weight: 400;
+	line-height: 115px;
+	letter-spacing: 0;
+	color: $video-title;
+	z-index: 10;
+	white-space: nowrap;
+	@include media-breakpoint-down(lg) {
+		font-size: 72px;
+	}
+	@include media-breakpoint-between(xs,sm) {
+		font-size: 48px;
+	}
+	@include media-breakpoint-down(sm) {
+		font-size: 35px;
+	}
+}
+
+.promo__play {
+	position: absolute;
+	background-image: url('../assets/svg/play-btn.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 312px;
+	height: 312px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	@include media-breakpoint-down(lg) {
+		width: 270px;
+		height: 270px;
+	}
+	@include media-breakpoint-between(xs,sm) {
+		width: 170px;
+		height: 170px;
+	}
+	@include media-breakpoint-down(sm) {
+		width: 100px;
+		height: 100px;
+	}
+}

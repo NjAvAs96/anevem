@@ -1,34 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="robots" content="noindex, nofollow">
-	<link rel="stylesheet" href="/style/style.css">
-	<title>Anevem - Comming Soon</title>
-	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<link rel="manifest" href="favicon/manifest.json">
-	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-</head>
-<body>
-	<div class="comming-soon__container">
-		<img class="comming-soon__brand" src="assets/svg/anevem-intro.svg" alt="Anevem brand">
-		<h1 class="comming-soon__title centered">Commning Soon!!!</h1>
-		<img class="comming-soon__globe" src="assets/svg/globe.svg" alt="globe">
-	</div>
-	<script src="js/global.min.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="noindex, nofollow" />
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" href="/style/style.css" />
+		<title>Anevem - Digital Media</title>
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="favicon/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="favicon/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="favicon/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="favicon/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="favicon/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="favicon/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="favicon/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="favicon/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="favicon/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="favicon/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="favicon/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="favicon/manifest.json" />
+		<meta
+			name="msapplication-TileImage"
+			content="favicon/ms-icon-144x144.png"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<div class="wrap">
+				<div class="header__container">
+					<div class="header__logo">
+						<img src="/assets/svg/anevem-logo-mini.svg" alt="Anevem minified Logo" class="header__logo-img"/>
+						<a href="/" class="header__logo-link" aria-label="Anevem Home Page"></a>
+					</div>
+					<button class="header__hamburger-open js-menu-open" aria-label="Open navigation menu">
+						<i class="icon icon-ico-hamburger-open"></i>
+					</button>
+					<nav class="nav js-nav">
+						<ul class="nav__items">
+							<li class="nav__item nav__item--close">
+								<button class="header__hamburger-close js-menu-close" aria-label="Close navigation menu">
+									<i class="icon icon-ico-hamburger-close"></i>
+								</button>
+							</li>
+							<li class="nav__item">
+								<a href="#main" class="nav__item-link js-menu-link">HOME</a>
+							</li>
+							<li class="nav__item">
+								<a href="#services" class="nav__item-link js-menu-link">OUR SERVICES</a>
+							</li>
+							<li class="nav__item">
+								<a href="#about" class="nav__item-link js-menu-link">ABOUT</a>
+							</li>
+							<li class="nav__item">
+								<a href="#contact" class="nav__item-link js-menu-link">CONTACT</a>
+							</li>
+							<li class="nav__item nav__item--btn">
+								<a href="mailto:info@anevem.com" class="nav__item-link">WRITE US</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="main" id="main">
+			<section class="banner">
+				<div class="banner__info">
+					<h1 class="banner__title">
+						<span class="banner__pre">BE THE FUTURE</span>ANEVEM
+					</h1>
+					<h2 class="banner__subtitle">DIGITAL MEDIA</h2>
+					<a href="#portfolio" class="banner__btn">PORTFOLIO</a>
+				</div>
+				<div class="banner__bg">
+					<!-- <img src="" alt="Banner background image" class="banner__img"> -->
+					<video class="banner__video" autoplay muted loop>
+						<source src="/assets/video/bg-video.mp4" type="video/mp4" />
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</section>
+			<section class="social">
+				<h3 class="social__title">FOLLOW US</h3>
+				<ul class="social__list">
+					<li class="social__item">
+						<a href="javascript:;" class="social__link">
+							<i class="icon icon-ico-insta"></i>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="javascript:;" class="social__link">
+							<i class="icon icon-ico-linkedin"></i>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="javascript:;" class="social__link">
+							<i class="icon icon-ico-behance"></i>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section class="intro" id="about">
+				<div class="wrap">
+					<div class="intro__container">
+						<div class="intro__box">
+							<h3 class="intro__title">WHO ARE WE?</h3>
+							<p class="intro__text">
+								We’re a global marketing agency that specializes in the creation
+								of brand identities, websites, eCommerce, video production, and
+								the integration of digital media.<br /><br />
+								We help our clients get quality and creative solutions to their
+								brand needs! It’s important to find a brand that can work with
+								you as an individual, and Anevem does just that. We’re built on
+								a foundation of collaboration, trust, and shared values.
+							</p>
+							<span class="intro__important"
+								>We work differently because we’re built differently.</span
+							>
+						</div>
+						<img src="assets/svg/globe.svg" alt="Globe" class="intro__img">
+					</div>
+				</div>
+			</section>
+			<!-- <section class="services" id="services">
+				<h3 class="services__title">OUR SERVICES</h3>
+				<div class="services__container"></div>
+			</section>
+			<section class="portfolio" id="portfolio">
+				<h3 class="portfolio__title">portfolio</h3>
+				<h4 class="portfolio__subtitle">social MEDIA content</h4>
+				<div class="portfolio__slider"></div>
+			</section> -->
+			<section class="promo">
+				<div class="wrap">
+					<div class="promo__container">
+						<video class="promo__loop" autoplay muted loop>
+							<source src="/assets/video/promo.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						<h3 class="promo__title">COMIMG SOON</h3>
+						<button class="promo__play" disabled aria-label="Play promo video"></button>
+					</div>
+				</div>
+			</section>
+			<section class="branding">
+				<div class="wrap">
+					<div class="branding__container">
+						<h3 class="branding__title">BRANDING</h3>
+						<div class="branding__slider-container">
+							<div class="branding__slider js-branding-slider">
+								<div class="branding__slide">
+									<picture class="branding__picture">
+										<source media="(min-width:768px)" srcset="/assets/img/branding/cards.png">
+											<img class="branding__image" src="/assets/img/branding/cards-m.png" alt="Cards">
+									</picture>
+								</div>
+								<div class="branding__slide">
+									<picture class="branding__picture">
+										<source media="(min-width:768px)" srcset="/assets/img/branding/cards.png">
+											<img class="branding__image" src="/assets/img/branding/cards-m.png" alt="Cards">
+									</picture>
+								</div>
+								<div class="branding__slide">
+									<picture class="branding__picture">
+										<source media="(min-width:768px)" srcset="/assets/img/branding/cards.png">
+											<img class="branding__image" src="/assets/img/branding/cards-m.png" alt="Cards">
+									</picture>
+								</div>
+							</div>
+							<div class="branding__controls">
+								<button class="branding__prev js-branding-prev" aria-label="slide to previous">
+									<i class="icon icon-ico-slider"></i>
+								</button>
+								<button class="branding__next js-branding-next" aria-label="slide to next">
+									<i class="icon icon-ico-slider"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contact" id="contact">
+				<div class="wrap">
+					<div class="contact__container">
+						<h3 class="contact__title">CONTACT US</h3>
+						<form action="/" class="contact__form form">
+							<div class="form__main">
+								<div class="form__avatar" aria-hidden="true">
+									<span class="icon icon-ico-contact"></span>
+								</div>
+								<div class="form__group form__group--half">
+									<input type="text" class="form__firstname" placeholder="First Name*" required/>
+								</div>
+								<div class="form__group form__group--half">
+									<input type="text" class="form__lastname" placeholder="Last Name"/>
+								</div>
+								<div class="form__group form__group--half">
+									<input class="form__email" type="email" placeholder="Email*" required/>
+								</div>
+								<div class="form__group form__group--half">
+									<select class="form__country js-country-select" required>
+										<option value="">Country*</option>
+									</select>
+								</div>
+								<div class="form__group form__group--phone">
+									<input
+										type="text"
+										class="form__phone"
+										placeholder="Phone Number"
+									/>
+								</div>
+								<div class="form__group form__group--textarea">
+									<textarea class="form__message" placeholder="Please drop a message..*"></textarea>
+								</div>
+							</div>
+							<div class="form__sec">
+								<div class="form__avatar" aria-hidden="true">
+									<span class="icon icon-ico-contact"></span>
+								</div>
+								<span class="form__hint"
+									>*Please fill your details in the empty fields to</span
+								>
+								<h4 class="form__subtitle">CONTACT US</h4>
+								<div class="form__group form__group--phone">
+									<input
+										type="text"
+										class="form__phone"
+										placeholder="Phone Number"
+									/>
+								</div>
+							</div>
+							<div class="form__submit-box">
+								<div class="form__group form__group--submit">
+									<button class="form__button" type="submit">SUBMIT</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="wrap">
+				<div class="footer__container">
+					<div class="footer__group">
+						<h3 class="footer__logo">
+							<a class="footer__logo-link" href="/">ANEVEM</a>
+						</h3>
+						<p class="footer__info">
+							EnterpriseWeb is the first industrial-grade no-code platform
+							specifically designed for software engineers.
+						</p>
+					</div>
+					<div class="footer__group">
+						<h4 class="footer__column-title">Important Links</h4>
+						<ul class="footer__items">
+							<li class="footer__item">
+								<a class="footer__link footer__link--universal" href="javascript:;">
+									<i class="icon icon-ico-footer-link"></i>
+									<span class="footer__link-text">Privacy Policy</span>
+								</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link footer__link--universal" href="javascript:;">
+									<i class="icon icon-ico-footer-link"></i>
+									<span class="footer__link-text">Terms & Condition</span>
+								</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link footer__link--universal"	href="javascript:;">
+									<i class="icon icon-ico-footer-link"></i>
+									<span class="footer__link-text">Terms of Services</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__group">
+						<h4 class="footer__column-title">Contact Details</h4>
+						<ul class="footer__socials">
+							<li class="footer__social">
+								<a class="footer__link footer__link--location" href="javascript:;">
+									<i class="icon icon-ico-footer-map"></i>
+									<span class="footer__link-text">123 street, xyz road, abc</span>
+								</a>
+							</li>
+							<li class="footer__social">
+								<a class="footer__link footer__link--phone" href="javascript:;">
+									<i class="icon icon-ico-footer-phone"></i>
+									<span class="footer__link-text">+123 123 1234</span>
+								</a>
+							</li>
+							<li class="footer__social">
+								<a class="footer__link footer__link--mail" href="mailto: info@anevem.com">
+									<i class="icon icon-ico-footer-mail"></i>
+									<span class="footer__link-text">info@anevem.com</span>
+								</a>
+							</li>
+							</ul>
+						</div>
+						<span class="footer__copy"
+							>© EntepriseWeb LLC, 2021. All rights reserved.</span
+						>
+					</div>
+				</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script defer src="js/global.min.js"></script>
+	</body>
 </html>
