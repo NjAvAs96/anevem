@@ -1324,14 +1324,12 @@ const menu = {
 		let _this = this;
 		this.openNav.addEventListener("click", function() {
 			_this.navigation.classList.add('nav--open');
-			// helpers.disableScroll();
 		});
 	},
 	closeNavigation: function() {
 		let _this = this;
 		this.closeNav.addEventListener("click", function() {
 			_this.navigation.classList.remove('nav--open');
-			// helpers.enableScroll();
 		});
 	},
 	linkClose: function() {
@@ -1636,6 +1634,60 @@ const branding = {
 	}
 };
 
+const services = {
+	init: function() {
+		this.accordion();
+		this.imageChange();
+	},
+	accordion: function() {
+		var allPanels = $('.services__box');
+		$('.js-service-button').on('click', function() {
+			allPanels.slideUp(300);
+			$(this).next().slideToggle(300);
+		});
+	},
+	imageChange: function() {
+		$('.js-service-button').on('click', function() {
+			var id = $(this).data('id');
+			$('.services__img').each(function() {
+				if($(this).data('id') === id) {
+					$(this).delay(500).fadeIn(300);
+				} else {
+					$(this).fadeOut(300);
+				}
+			});
+		});
+	}
+}
+
+const portfolio = {
+	slider: $('.js-portfolio-slider'),
+	init: function() {
+		this.initSlider();
+	},
+	initSlider: function() {
+		this.slider.slick({
+			speed: 500,
+			slidesToShow: 3,
+  			slidesToScroll: 1,
+			cssEase: 'linear',
+			centerMode: true,
+			prevArrow: $('.js-portfolio-prev'),
+			nextArrow: $('.js-portfolio-next'),
+			responsive: [
+				{
+				  breakpoint: 768,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+				  }
+				}]
+		});
+		this.slider.slick('setPosition');
+	}
+};
+
 
 //init
 
@@ -1648,5 +1700,7 @@ helpers.init();
 menu.init();
 country.init();
 branding.init();
+services.init();
+portfolio.init();
 
 

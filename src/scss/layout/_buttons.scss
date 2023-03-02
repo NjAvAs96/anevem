@@ -15,10 +15,6 @@ a,
 button {
 	appearance: none;
 	outline: none;
-
-	&:focus {
-		outline: 1px dashed rgba($black, 0.2);
-	}
 }
 
 .btn {

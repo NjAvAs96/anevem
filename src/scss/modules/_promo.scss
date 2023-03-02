@@ -17,12 +17,22 @@
 	background: linear-gradient(90deg, #222221 0%, #000000 22.13%, #000000 76.69%, #222221 98.82%);
 }
 
+.promo__img {
+	display: none;
+	@include media-breakpoint-down(sm) {
+		display: block;
+	}
+}
+
 .promo__loop {
 	width: 100%;
 	opacity: 0.6;
 	@include media-breakpoint-down(lg) {
 		width: 200%;
 		margin-left: -50%;
+	}
+	@include media-breakpoint-down(sm) {
+		display: none;
 	}
 }
 

@@ -158,7 +158,7 @@
 	margin-left: 150px;
 	margin-right: 29px;
 	.nav__item-link {
-		background: linear-gradient(90.16deg, #676767 2.17%, #222221 50.45%, #000000 98.39%);
+		background: transparent;
 		border-radius: 31px;
 		display: inline-block;
 		width: 235px;
@@ -169,6 +169,36 @@
 		font-weight: 500;
 		color: $white;
 		box-shadow: 6px 5px 10px 3px rgba(54, 54, 54, 0.24);
+		position: relative;
+		overflow: hidden;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(90.16deg, #676767 2.17%, #222221 50.45%, #000000 98.39%);
+			z-index: -1;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 150%;
+			height: 100%;
+			background: linear-gradient(-50.16deg, #676767 2.17%, #222221 50.45%, #000000 70.39%);
+			z-index: -1;
+			opacity: 0;
+			transition: opacity 0.4s ease-in-out;
+		}
+		@include hover {
+			&::after {
+				width: 100%;
+				opacity: 1;
+			}
+		}
 	}
 	@include media-breakpoint-down(lg) {
 		margin-right: 0;
