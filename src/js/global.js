@@ -1688,6 +1688,26 @@ const portfolio = {
 	}
 };
 
+const modal = {
+	init: function() {
+		this.openModal();
+		this.closeModal();
+	},
+	openModal: function() {
+		$('.js-modal-open').on('click', function() {
+			helpers.disableScroll();
+			$('.modal').addClass('active');
+			$('.modal__video').trigger('play');
+		});
+	},
+	closeModal: function() {
+		$('.js-modal-close').on('click', function() {
+			helpers.enableScroll();
+			$('.modal__video').trigger('pause');
+			$('.modal').removeClass('active');
+		});
+	}
+}
 
 //init
 
@@ -1701,6 +1721,7 @@ menu.init();
 country.init();
 branding.init();
 services.init();
+modal.init();
 portfolio.init();
 
 

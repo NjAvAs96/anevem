@@ -342,14 +342,24 @@
 					<div class="promo__container">
 						<img class="promo__img" src="/assets/img/placeholder/promov2.png" alt="Promo video placeholder image">
 						<video class="promo__loop" autoplay muted loop>
-							<source src="/assets/video/promo.mp4" type="video/mp4">
+							<source src="/assets/video/promoMuted.mp4" type="video/mp4">
 							Your browser does not support the video tag.
 						</video>
-						<h3 class="promo__title">COMIMG SOON</h3>
-						<button class="promo__play" disabled aria-label="Play promo video"></button>
+						<button class="promo__play js-modal-open" aria-label="Play promo video"></button>
 					</div>
 				</div>
 			</section>
+			<div class="modal">
+				<div class="modal__video-box">
+					<video class="modal__video" controls>
+						<source src="/assets/video/promo.mp4" type="video/mp4">
+						<source src="/assets/video/promoMuted.mp4" type="video/mp4">
+					</video>
+				</div>
+				<button class="modal__btn js-modal-close">
+					<i class="icon icon-ico-hamburger-close"></i>
+				</button>
+			</div>
 			<section class="branding">
 				<div class="wrap">
 					<div class="branding__container">
