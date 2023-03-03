@@ -67,6 +67,9 @@
 	&.slick-slide {
 		display: flex;
 		flex: 0 0 calc(100vw - 66px);
+		img {
+			margin: 0 auto;
+		}
 	}
 	@include media-breakpoint-down(xl) {
 		padding: 100px 50px;
