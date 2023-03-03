@@ -4,7 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="robots" content="noindex, nofollow" />
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="Danijel Rakic">
+		<meta name="description" content="Anevem is a global marketing agency that specializes in the creation
+		of brand identities, websites, eCommerce, video production, and
+		the integration of digital media. Anevem helps clients get quality and creative solutions to their
+		brand needs! It’s important to find a brand that can work with
+		you as an individual, and Anevem does just that. Anevem is built on
+		a foundation of collaboration, trust, and shared values.">
+		<meta name="keywords" content="Anevem, Digital Media, Digital Media Agency, Graphic design, Branding, Design & Production, Social media marketing, Ecommerce, Branding indentity, logo creation, Digital strategy, Web design, Photography, Video production, Video editing, Copyrighting, Data-driven design, Social media, Social media management, Paid advertising, Community growth, Product copyrighting">
 		<link rel="preload" href="/style/style.css" as="style"/>
 		<link rel="stylesheet" href="/style/style.css" />
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -409,22 +417,22 @@
 				<div class="wrap">
 					<div class="contact__container">
 						<h3 class="contact__title">CONTACT US</h3>
-						<form action="/" class="contact__form form">
+						<form name="contact" netlify class="contact__form form">
 							<div class="form__main">
 								<div class="form__avatar" aria-hidden="true">
 									<span class="icon icon-ico-contact"></span>
 								</div>
 								<div class="form__group form__group--half">
-									<input type="text" class="form__firstname" placeholder="First Name*" required/>
+									<input type="text" class="form__firstname" placeholder="First Name*" name="first-name" required/>
 								</div>
 								<div class="form__group form__group--half">
-									<input type="text" class="form__lastname" placeholder="Last Name"/>
+									<input type="text" class="form__lastname" name="last-name" placeholder="Last Name"/>
 								</div>
 								<div class="form__group form__group--half">
-									<input class="form__email" type="email" placeholder="Email*" required/>
+									<input class="form__email" type="email" name="mail" placeholder="Email*" required/>
 								</div>
 								<div class="form__group form__group--half">
-									<select class="form__country js-country-select" required>
+									<select class="form__country js-country-select" name="country" required>
 										<option value="">Country*</option>
 									</select>
 								</div>
@@ -433,10 +441,11 @@
 										type="text"
 										class="form__phone"
 										placeholder="Phone Number"
+										name="phone-number"
 									/>
 								</div>
 								<div class="form__group form__group--textarea">
-									<textarea class="form__message" placeholder="Please drop a message..*"></textarea>
+									<textarea class="form__message" name="message" placeholder="Please drop a message..*" required></textarea>
 								</div>
 							</div>
 							<div class="form__sec">
@@ -452,6 +461,7 @@
 										type="text"
 										class="form__phone"
 										placeholder="Phone Number"
+										name="phone-number"
 									/>
 								</div>
 							</div>
@@ -506,7 +516,7 @@
 								</a>
 							</li>
 							<li class="footer__social">
-								<a class="footer__link footer__link--mail" href="mailto: office@anevem.com">
+								<a class="footer__link footer__link--mail" href="mailto:office@anevem.com">
 									<i class="icon icon-ico-footer-mail"></i>
 									<span class="footer__link-text">office@anevem.com</span>
 								</a>
