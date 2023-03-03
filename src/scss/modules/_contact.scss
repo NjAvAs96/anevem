@@ -63,6 +63,10 @@
 	width: 100%;
 	flex: 0 1 65%;
 	margin-right: auto;
+	.form__group--phone,
+		.form__phone {
+			display: none;
+		}
 	@include media-breakpoint-up(md) {
 		.form__avatar {
 			display: none;
@@ -79,6 +83,10 @@
 			.icon {
 				font-size: 65px;
 			}
+		}
+		.form__group--phone,
+		.form__phone {
+			display: block;
 		}
 	}
 }
