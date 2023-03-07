@@ -1638,18 +1638,23 @@ const services = {
 	init: function() {
 		this.accordion();
 		this.imageChange();
+		this.accordionScrollTo();
 	},
 	accordion: function() {
-		var allPanels = $('.services__box');
-		$('.js-service-button').on('click', function() {
-			allPanels.slideUp(300);
-			$(this).next().slideToggle(300);
+		$('.js-services-button').on('click', function() {
+			$('.js-services-button').removeClass('active');
+			$('.services__box').slideUp(300);
+			if($(this).next().is(':hidden')) {
+				$(this).addClass('active').next().slideDown(300);
+			} else {
+				$(this).removeClass('active').next().slideUp(300);
+			}
 		});
 	},
 	imageChange: function() {
-		$('.js-service-button').on('click', function() {
+		$('.js-services-button').on('click', function() {
 			var id = $(this).data('id');
-			$('.services__img').each(function() {
+			$('.js-services-img').each(function() {
 				if($(this).data('id') === id) {
 					$(this).delay(500).fadeIn(300);
 				} else {
@@ -1657,6 +1662,19 @@ const services = {
 				}
 			});
 		});
+	},
+	accordionScrollTo: function() {
+		if($(window).width() < 1200) {
+			$('.js-services-button').on('click', function() {
+				var _this = this;
+				setTimeout(function() {
+					var position = $(_this).offset().top;
+					$([document.documentElement, document.body]).animate({
+						scrollTop: ( position - $('.header').outerHeight() - 50)
+					}, 500);
+				}, 300);
+			});
+		}
 	}
 }
 
