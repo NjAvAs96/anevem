@@ -1,0 +1,10 @@
+User-agent: *
+Disallow:
+
+User-agent: Nutch
+Disallow: /
+
+User-agent: Scrappy
+Disallow: /
+
+Sitemap: https://anevem.com/sitemap.xml
